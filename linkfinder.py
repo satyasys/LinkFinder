@@ -399,5 +399,5 @@ if __name__ == "__main__":
 
                 output += header + body
 
-    if args.output != 'cli':
+    if args.output != 'cli' and len(output) >= 2500:
         html_save(output)
